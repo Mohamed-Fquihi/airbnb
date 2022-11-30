@@ -1,6 +1,9 @@
+const { appendFile } = require('fs')
+
 /** @type {import('next').NextConfig} */
 const NextConfig = {
   reactStrictMode: true,
+  
 }
 
 module.exports = {
