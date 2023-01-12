@@ -18,6 +18,10 @@ function Header() {
   const [endDate, setEndDate] = useState(new Date());
   const [noOfGuests, setNoOfGuests] = useState(1);
 
+
+  const resetInput = () =>{
+    setSearchInput("")
+  }
   
   const handleSelect = (ranges) =>{
     setStartDate(ranges.selection.startDate);
@@ -96,10 +100,18 @@ function Header() {
               value={noOfGuests}
               onChange={event => setNoOfGuests(event.target.value)}
               type="number" 
+              min={1}
               className="w-12 pl-2 text-lg outline-none text-red-400"></input>
             </div>
 
-        </div>
+            <div className="flex ">
+              <button onClick={resetInput} 
+              className="flex-grow bg-red-400 text-white rounded-full font-semibold mr-4 py-2 ">Cancel</button>
+              <button className="flex-grow bg-red-400 text-white rounded-full font-semibold ml-4 py-2">Search</button>
+            </div>
+
+        </div> 
+
       )}
 
 

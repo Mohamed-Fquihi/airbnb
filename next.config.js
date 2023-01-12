@@ -8,7 +8,7 @@ const NextConfig = {
 
 module.exports = {
   images: {
-  domains: ['links.papareact.com', 'www.ricburns.com', 'alfa-logistics-family.com', 'www.afrik21.africa','www.jsonkeeper.com']
+  domains: ['links.papareact.com', 'www.ricburns.com', 'alfa-logistics-family.com', 'www.afrik21.africa','www.jsonkeeper.com','www.linkpicture.com']
    
   }
 }
