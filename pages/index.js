@@ -5,7 +5,7 @@ import Header from '../components/Header';
 import SmallCard from '../components/SmallCard';
 import MediumCard from '../components/MediumCard';
 import Footer from '../components/Footer'
-
+import Signin from "./signin"
 
 
 export default function Home({ exploreData, cardsData }) {
@@ -13,11 +13,9 @@ export default function Home({ exploreData, cardsData }) {
   return (
     <div className="">
       <Head>
-        <title>D&M</title>
+        <title>Airbnb 2.0</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-    
 
       <Header />
        {/*Banner*/} 
@@ -74,7 +72,7 @@ export async function getStaticProps() {
 
 
   return {
-    props: {
+    props: { 
       exploreData,
       cardsData
     }

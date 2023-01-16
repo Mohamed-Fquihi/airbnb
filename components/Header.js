@@ -50,11 +50,8 @@ function Header() {
     key: 'selection',
   };
 
-  
-
-
   return (
-    <header className='sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10'>
+    <header className='sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-4 md:px-10'>
       
 
       {/*left section*/}  
@@ -89,12 +86,13 @@ function Header() {
       {/*Right section*/}  
       <div className='flex items-center space-x-4 justify-end text-gray-500'>
 
-        <p className='hidden md:inline cursor-pointer'>Become a host</p>
-            <GlobeAltIcon className='h-6'/>
+        <p className='hidden md:inline mt-3 cursor-pointer'>Become a host</p>
+            <GlobeAltIcon className='h-5'/>
 
             <div className='flex items-center space-x-1 border-2 p-2 rounded-full'>
             <MenuIcon className='h-6 cursor-pointer'/>
-            <UserCircleIcon className='h-6 cursor-pointer'/>
+            <UserCircleIcon onClick={() => router.push("/signin")}
+            className='h-6 cursor-pointer' />
 
             </div>
 

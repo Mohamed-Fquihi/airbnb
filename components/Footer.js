@@ -30,6 +30,8 @@ function Footer  () {
             <div className="space-y-4 text-xs text-gray-800">
                 <h5 className="font-bold">CONTACT</h5>
                 <p>mo.fquihi@gmail.com</p>
+                <p>dounia.zoubid@gmail.com</p>
+
                 <p>Phone : 0522708967</p>
                
             </div>     
